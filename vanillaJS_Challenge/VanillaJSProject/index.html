@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla JS Project</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1 id="main" class="clock">AM 00:00:00</h1>
+
+    <div class="login">
+        <h2 id="hi" class="hidden"></h2>              
+        <form id="login-form" class="hidden">
+            <h2>What's your name ?</h2>    
+            <input
+                type="text"
+                required
+                placeholder="Please write your name">
+            <button>OK</button>
+        </form>
+    </div>
+
+    <div class="todo-list">
+        <form id="todo-form">
+            <input required type="text" placeholder="Write a To do and Press Enter">
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <div class="quote">
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="weather">
+        <span></span>
+        <span></span>
+    </div>
+</body>
+<script type ="text/javascript" src="apikey.js"></script>
+<script src="login.js"></script>
+<script src="background.js"></script>
+<script src="quotes.js"></script>
+<script src="clock.js"></script>
+<script src="todolist.js"></script>
+<script src="weather.js"></script>
+</html>
